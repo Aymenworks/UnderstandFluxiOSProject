@@ -10,9 +10,9 @@ import UIKit
 
 class ArtistsTableViewController: UITableViewController {
 
-    weak var detailViewController: ArtistDetailViewController? = nil
     var objects = [Any]()
 
+    var persistenceStore: PersistenceStore!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,11 +21,6 @@ class ArtistsTableViewController: UITableViewController {
 
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(insertNewObject(_:)))
         navigationItem.rightBarButtonItem = addButton
-        
-        if let split = splitViewController {
-            let controllers = split.viewControllers
-            detailViewController = controllers[controllers.count-1] as? ArtistDetailViewController
-        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -35,9 +30,20 @@ class ArtistsTableViewController: UITableViewController {
 
     @objc
     func insertNewObject(_ sender: Any) {
-        objects.insert(NSDate(), at: 0)
-        let indexPath = IndexPath(row: 0, section: 0)
-        tableView.insertRows(at: [indexPath], with: .automatic)
+        let artistCreationAlertController = UIAlertController(title: "Add artist", message: nil, preferredStyle: .alert)
+        artistCreationAlertController.addTextField { textFieldToAdd in
+            textFieldToAdd.placeholder = "Artist name"
+        }
+        
+        artistCreationAlertController.addAction(UIAlertAction(title: "Create", style: .default) { [weak self] _ in
+            guard let artistName = artistCreationAlertController.textFields?.first?.text else { return }
+            let artist = Artist(name: artistName)
+            self?.persistenceStore.artists.value.append(artist)
+        })
+        
+        artistCreationAlertController.addAction(UIAlertAction(title: "Cancel", style: .cancel) { _ in })
+        
+        present(artistCreationAlertController, animated: true, completion: nil)
     }
 
     // MARK: - Segues
@@ -45,9 +51,10 @@ class ArtistsTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
             if let indexPath = tableView.indexPathForSelectedRow {
-                let object = objects[indexPath.row] as! NSDate
+                let artist = persistenceStore.artists.value[indexPath.row]
                 let controller = segue.destination as! ArtistDetailViewController
-                controller.detailItem = object
+                controller.artist = artist
+                controller.persistenceStore = self.persistenceStore
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
                 controller.navigationItem.leftItemsSupplementBackButton = true
             }
@@ -61,14 +68,16 @@ class ArtistsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return objects.count
+        return persistenceStore.artists.value.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ArtistCell", for: indexPath)
 
-        let object = objects[indexPath.row] as! NSDate
-        cell.textLabel!.text = object.description
+        let artist = persistenceStore.artists.value[indexPath.row]
+        cell.textLabel?.text = artist.name
+        cell.detailTextLabel?.text = "Musics: \(artist.musicsCreated.count)"
+        
         return cell
     }
 

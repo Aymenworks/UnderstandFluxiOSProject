@@ -9,6 +9,7 @@
 import Foundation
 
 struct Music {
+    let id = NSUUID.init().uuidString
     let name: String
     let createdBy: Artist
 }

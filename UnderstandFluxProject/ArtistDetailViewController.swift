@@ -11,14 +11,12 @@ import UIKit
 class ArtistDetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
-
+    var persistenceStore: PersistenceStore!
 
     func configureView() {
         // Update the user interface for the detail item.
-        if let detail = detailItem {
-            if let label = detailDescriptionLabel {
-                label.text = detail.description
-            }
+        if let artist = artist {
+            detailDescriptionLabel.text = artist.name
         }
     }
 
@@ -28,13 +26,11 @@ class ArtistDetailViewController: UIViewController {
         configureView()
     }
 
-    var detailItem: NSDate? {
+    var artist: Artist? {
         didSet {
             // Update the view.
             configureView()
         }
     }
-
-
 }
 

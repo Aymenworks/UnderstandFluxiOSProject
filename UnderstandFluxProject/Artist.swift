@@ -9,6 +9,16 @@
 import Foundation
 
 struct Artist {
+    let id: String
     let name: String
-    var musicsCreated: [Music]
+    var musicsCreated: [Music] = []
+    
+    init(name: String) {
+        self.id = NSUUID.init().uuidString
+        self.name = name
+    }
+    
+    mutating func add(music: Music) {
+        musicsCreated.append(music)
+    }
 }
