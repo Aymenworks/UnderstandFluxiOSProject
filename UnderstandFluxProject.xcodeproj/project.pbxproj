@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6919A1630FA7334271641B3C /* Pods_UnderstandFluxProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB15BEFCE63D009FBF57440A /* Pods_UnderstandFluxProject.framework */; };
 		A5069B7121FED7A8006C669A /* ArtistsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5069B7021FED7A8006C669A /* ArtistsTableViewController.swift */; };
 		A5069B7321FED7B7006C669A /* ArtistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5069B7221FED7B7006C669A /* ArtistDetailViewController.swift */; };
 		A5069B7521FED8C0006C669A /* MusicsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5069B7421FED8C0006C669A /* MusicsTableViewController.swift */; };
 		A5069B7721FEE120006C669A /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5069B7621FEE120006C669A /* Artist.swift */; };
 		A5069B7921FEE128006C669A /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5069B7821FEE128006C669A /* Music.swift */; };
+		A5069B7B21FEE571006C669A /* PersistenceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5069B7A21FEE571006C669A /* PersistenceStore.swift */; };
+		A5069B7F21FEFF51006C669A /* AppTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5069B7E21FEFF51006C669A /* AppTabBarViewController.swift */; };
 		A5A1273B21FC599A00285F40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A1273A21FC599A00285F40 /* AppDelegate.swift */; };
 		A5A1274021FC599A00285F40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A1273E21FC599A00285F40 /* Main.storyboard */; };
 		A5A1274221FC599B00285F40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5A1274121FC599B00285F40 /* Assets.xcassets */; };
@@ -19,17 +22,22 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		202F8D594E8020FA4FEADC18 /* Pods-UnderstandFluxProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnderstandFluxProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UnderstandFluxProject/Pods-UnderstandFluxProject.debug.xcconfig"; sourceTree = "<group>"; };
 		A5069B7021FED7A8006C669A /* ArtistsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistsTableViewController.swift; sourceTree = "<group>"; };
 		A5069B7221FED7B7006C669A /* ArtistDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistDetailViewController.swift; sourceTree = "<group>"; };
 		A5069B7421FED8C0006C669A /* MusicsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicsTableViewController.swift; sourceTree = "<group>"; };
 		A5069B7621FEE120006C669A /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		A5069B7821FEE128006C669A /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		A5069B7A21FEE571006C669A /* PersistenceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceStore.swift; sourceTree = "<group>"; };
+		A5069B7E21FEFF51006C669A /* AppTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarViewController.swift; sourceTree = "<group>"; };
 		A5A1273721FC599A00285F40 /* UnderstandFluxProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnderstandFluxProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A1273A21FC599A00285F40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5A1273F21FC599A00285F40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A5A1274121FC599B00285F40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5A1274421FC599B00285F40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5A1274621FC599B00285F40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB15BEFCE63D009FBF57440A /* Pods_UnderstandFluxProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnderstandFluxProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3511FD82255E754DBE59049 /* Pods-UnderstandFluxProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnderstandFluxProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnderstandFluxProject/Pods-UnderstandFluxProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +45,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6919A1630FA7334271641B3C /* Pods_UnderstandFluxProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A9EF597CC9EDB1D41E6F162 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				202F8D594E8020FA4FEADC18 /* Pods-UnderstandFluxProject.debug.xcconfig */,
+				C3511FD82255E754DBE59049 /* Pods-UnderstandFluxProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A5A1272E21FC599A00285F40 = {
 			isa = PBXGroup;
 			children = (
 				A5A1273921FC599A00285F40 /* UnderstandFluxProject */,
 				A5A1273821FC599A00285F40 /* Products */,
+				5A9EF597CC9EDB1D41E6F162 /* Pods */,
+				FD5348EF122F3376181A721E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,14 +86,24 @@
 				A5069B7021FED7A8006C669A /* ArtistsTableViewController.swift */,
 				A5069B7221FED7B7006C669A /* ArtistDetailViewController.swift */,
 				A5069B7421FED8C0006C669A /* MusicsTableViewController.swift */,
+				A5069B7A21FEE571006C669A /* PersistenceStore.swift */,
+				A5069B7821FEE128006C669A /* Music.swift */,
+				A5069B7621FEE120006C669A /* Artist.swift */,
 				A5A1273E21FC599A00285F40 /* Main.storyboard */,
 				A5A1274121FC599B00285F40 /* Assets.xcassets */,
 				A5A1274321FC599B00285F40 /* LaunchScreen.storyboard */,
 				A5A1274621FC599B00285F40 /* Info.plist */,
-				A5069B7621FEE120006C669A /* Artist.swift */,
-				A5069B7821FEE128006C669A /* Music.swift */,
+				A5069B7E21FEFF51006C669A /* AppTabBarViewController.swift */,
 			);
 			path = UnderstandFluxProject;
+			sourceTree = "<group>";
+		};
+		FD5348EF122F3376181A721E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB15BEFCE63D009FBF57440A /* Pods_UnderstandFluxProject.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5A1274921FC599B00285F40 /* Build configuration list for PBXNativeTarget "UnderstandFluxProject" */;
 			buildPhases = (
+				17992B149F11C86C35500642 /* [CP] Check Pods Manifest.lock */,
 				A5A1273321FC599A00285F40 /* Sources */,
 				A5A1273421FC599A00285F40 /* Frameworks */,
 				A5A1273521FC599A00285F40 /* Resources */,
+				7719DCA3529EB17801E2A267 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -142,6 +174,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		17992B149F11C86C35500642 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UnderstandFluxProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7719DCA3529EB17801E2A267 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UnderstandFluxProject/Pods-UnderstandFluxProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UnderstandFluxProject/Pods-UnderstandFluxProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A5A1273321FC599A00285F40 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -151,6 +234,8 @@
 				A5A1273B21FC599A00285F40 /* AppDelegate.swift in Sources */,
 				A5069B7121FED7A8006C669A /* ArtistsTableViewController.swift in Sources */,
 				A5069B7721FEE120006C669A /* Artist.swift in Sources */,
+				A5069B7F21FEFF51006C669A /* AppTabBarViewController.swift in Sources */,
+				A5069B7B21FEE571006C669A /* PersistenceStore.swift in Sources */,
 				A5069B7321FED7B7006C669A /* ArtistDetailViewController.swift in Sources */,
 				A5069B7921FEE128006C669A /* Music.swift in Sources */,
 			);
@@ -296,6 +381,7 @@
 		};
 		A5A1274A21FC599B00285F40 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 202F8D594E8020FA4FEADC18 /* Pods-UnderstandFluxProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -314,6 +400,7 @@
 		};
 		A5A1274B21FC599B00285F40 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3511FD82255E754DBE59049 /* Pods-UnderstandFluxProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
