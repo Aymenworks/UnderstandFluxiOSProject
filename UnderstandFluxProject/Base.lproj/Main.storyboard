@@ -52,19 +52,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Detail view content goes here" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="vQV-Vb-bac">
-                                <rect key="frame" x="20" y="323.5" width="335" height="20.5"/>
+                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Detail view content goes here" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="vQV-Vb-bac">
+                                <rect key="frame" x="20" y="84" width="335" height="62.5"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rhn-64-215">
+                                <rect key="frame" x="0.0" y="166.5" width="375" height="500.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MusicCell" textLabel="BCk-M2-Pvl" style="IBUITableViewCellStyleDefault" id="CUd-Bo-5xi">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CUd-Bo-5xi" id="YJN-Vp-IWn">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BCk-M2-Pvl">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="UgD-Ph-UWC" id="26N-u0-e6O"/>
+                                    <outlet property="delegate" destination="UgD-Ph-UWC" id="TIN-2y-i7b"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="vQV-Vb-bac" secondAttribute="trailing" constant="20" symbolic="YES" id="1FY-hh-35C"/>
-                            <constraint firstItem="vQV-Vb-bac" firstAttribute="leading" secondItem="ppL-a2-4jh" secondAttribute="leading" constant="20" symbolic="YES" id="5P2-hE-92h"/>
-                            <constraint firstItem="vQV-Vb-bac" firstAttribute="centerY" secondItem="ppL-a2-4jh" secondAttribute="centerY" id="oZL-iC-9zy"/>
+                            <constraint firstAttribute="trailing" secondItem="rhn-64-215" secondAttribute="trailing" id="6vh-ei-eZx"/>
+                            <constraint firstItem="v7M-UT-AaX" firstAttribute="trailing" secondItem="vQV-Vb-bac" secondAttribute="trailing" constant="20" id="Dvg-4y-6cf"/>
+                            <constraint firstItem="vQV-Vb-bac" firstAttribute="top" secondItem="v7M-UT-AaX" secondAttribute="top" constant="20" id="J3t-Xo-e4L"/>
+                            <constraint firstItem="rhn-64-215" firstAttribute="leading" secondItem="v7M-UT-AaX" secondAttribute="leading" id="VhS-O0-PRQ"/>
+                            <constraint firstAttribute="bottom" secondItem="rhn-64-215" secondAttribute="bottom" id="nB0-WT-0Gg"/>
+                            <constraint firstItem="rhn-64-215" firstAttribute="top" secondItem="vQV-Vb-bac" secondAttribute="bottom" constant="20" id="tjn-gu-Ajp"/>
+                            <constraint firstItem="vQV-Vb-bac" firstAttribute="leading" secondItem="v7M-UT-AaX" secondAttribute="leading" constant="20" id="ucC-mp-Hna"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="v7M-UT-AaX"/>
                     </view>
@@ -72,6 +105,7 @@
                     <navigationItem key="navigationItem" title="Detail" id="Yka-0F-3LH"/>
                     <connections>
                         <outlet property="detailDescriptionLabel" destination="vQV-Vb-bac" id="rqd-0d-GgM"/>
+                        <outlet property="musicsListTableView" destination="rhn-64-215" id="u5E-dZ-ttH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3MG-oP-dre" sceneMemberID="firstResponder"/>
@@ -193,6 +227,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lMD-Q8-djp"/>
+        <segue reference="7dn-DK-C5x"/>
     </inferredMetricsTieBreakers>
 </document>

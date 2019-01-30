@@ -15,6 +15,7 @@
 		A5069B7921FEE128006C669A /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5069B7821FEE128006C669A /* Music.swift */; };
 		A5069B7B21FEE571006C669A /* PersistenceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5069B7A21FEE571006C669A /* PersistenceStore.swift */; };
 		A5069B7F21FEFF51006C669A /* AppTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5069B7E21FEFF51006C669A /* AppTabBarViewController.swift */; };
+		A5069BA1220075EA006C669A /* ExampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5069BA0220075EA006C669A /* ExampleModel.swift */; };
 		A5A1273B21FC599A00285F40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A1273A21FC599A00285F40 /* AppDelegate.swift */; };
 		A5A1274021FC599A00285F40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A1273E21FC599A00285F40 /* Main.storyboard */; };
 		A5A1274221FC599B00285F40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5A1274121FC599B00285F40 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 		A5069B7821FEE128006C669A /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		A5069B7A21FEE571006C669A /* PersistenceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceStore.swift; sourceTree = "<group>"; };
 		A5069B7E21FEFF51006C669A /* AppTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabBarViewController.swift; sourceTree = "<group>"; };
+		A5069BA0220075EA006C669A /* ExampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleModel.swift; sourceTree = "<group>"; };
 		A5A1273721FC599A00285F40 /* UnderstandFluxProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnderstandFluxProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5A1273A21FC599A00285F40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5A1273F21FC599A00285F40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				A5069B7221FED7B7006C669A /* ArtistDetailViewController.swift */,
 				A5069B7421FED8C0006C669A /* MusicsTableViewController.swift */,
 				A5069B7A21FEE571006C669A /* PersistenceStore.swift */,
+				A5069BA0220075EA006C669A /* ExampleModel.swift */,
 				A5069B7821FEE128006C669A /* Music.swift */,
 				A5069B7621FEE120006C669A /* Artist.swift */,
 				A5A1273E21FC599A00285F40 /* Main.storyboard */,
@@ -232,6 +235,7 @@
 			files = (
 				A5069B7521FED8C0006C669A /* MusicsTableViewController.swift in Sources */,
 				A5A1273B21FC599A00285F40 /* AppDelegate.swift in Sources */,
+				A5069BA1220075EA006C669A /* ExampleModel.swift in Sources */,
 				A5069B7121FED7A8006C669A /* ArtistsTableViewController.swift in Sources */,
 				A5069B7721FEE120006C669A /* Artist.swift in Sources */,
 				A5069B7F21FEFF51006C669A /* AppTabBarViewController.swift in Sources */,

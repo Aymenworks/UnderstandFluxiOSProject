@@ -9,12 +9,11 @@
 import Foundation
 
 struct Artist {
-    let id: String
+    let id: String = NSUUID.init().uuidString
     let name: String
     var musicsCreated: [Music] = []
     
     init(name: String) {
-        self.id = NSUUID.init().uuidString
         self.name = name
     }
     

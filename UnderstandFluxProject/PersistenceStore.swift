@@ -9,25 +9,7 @@
 import Foundation
 import RxSwift
 
+//  Shared class used everywhere
 class PersistenceStore {
-    var artists: Variable<[Artist]> = Variable<[Artist]>([])
-    
-    var musics: Variable<[Music]> = Variable([])
-    
-    init() {
-        self.artists.value = [
-            Artist(name: "Tavito Nanao"),
-            Artist(name: "Basi"),
-            Artist(name: "Ai Otsuka"),
-            Artist(name: "Flumpool"),
-            Artist(name: "Small Circle Of Friends")
-        ]
-        
-        self.musics.value = [
-            Music(name: "Life is bicycle", createdBy: self.artists.value[4]),
-            Music(name: "Daisuki dayo", createdBy: self.artists.value[2]),
-            Music(name: "Sakuranbo", createdBy: self.artists.value[2]),
-            Music(name: "Anataniha", createdBy: self.artists.value[1])
-        ]
-    }
+    let exempleModel: Variable<ExempleModel> = Variable(.init())
 }
